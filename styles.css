@@ -51,6 +51,7 @@ img {
     border-radius: 0 10px 10px 0;
     background-color: hsl(277, 80%, 45%);
     opacity: 0.5;
+    width: 100%;
 }
 
 .stats span:first-line {
