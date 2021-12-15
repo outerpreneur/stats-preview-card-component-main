@@ -1,5 +1,5 @@
 :root {
-    --main-background: hsl(233, 47%, 7%) ;
+    --main-background: hsl(233, 47%, 7%);
     --card-background: hsl(244, 38%, 16%);
     --accent: hsl(277, 64%, 61%);
 }
@@ -16,7 +16,8 @@ body {
 
 .container {
     background-color: var(--card-background);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
     width: 75%;
     height: 29em;
@@ -24,12 +25,16 @@ body {
     flex-direction: row;
 }
 
-.column {
+.column1 {
     margin: 35px;
     display: flex;
     flex-direction: column;
     font-family: "inter";
     width: 50%;
+}
+
+.column2 {
+    width: 100%;
 }
 
 
@@ -39,9 +44,7 @@ body {
     margin-top: 40px;
 }
 
-.metrics {
-
-}
+.metrics {}
 
 .accent {
     color: var(--accent);
@@ -51,6 +54,8 @@ img {
     border-radius: 0 10px 10px 0;
     background-color: hsl(277, 80%, 45%);
     opacity: 0.5;
+    width: 100%;
+    height: 100%;
 }
 
 .stats span:first-line {
